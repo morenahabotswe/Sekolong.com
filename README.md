@@ -23,11 +23,10 @@ The browser may use the public anon key, but never place service-role keys or AI
 The UI calls for a future server-side `/api/mosuoe` abstraction. Keep provider keys on a server/edge function only. Replace the mock response in `src/components/Mosuoe.tsx` with a fetch to that endpoint after adding authentication, rate limits, moderation and teacher-review rules.
 
 ## Hostinger Web Apps
-1. Push this repository to GitHub.
-2. Create a Hostinger Web App from the repository.
-3. Build command: `npm run build`; output directory: `dist`.
-4. Add `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` as environment variables.
-5. Configure SPA fallback to `index.html` if using client-side routes.
+1. Create a Hostinger Web App from the repository.
+2. Build command: `npm run build`; output directory: `dist`.
+3. Add `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` as environment variables.
+4. Configure SPA fallback to `index.html` if using client-side routes.
 
 No Hostinger-, WordPress- or proprietary runtime dependency is required. Payment, ETL connectivity, email/SMS and video are intentionally integration placeholders. Google Meet URLs are stored as normal class links.
 
